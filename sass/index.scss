@@ -1,0 +1,12 @@
+@use "./scss-files/header";
+@use "./scss-files/main";
+@use "./scss-files/footer";
+
+@import url(./scss-files/_header.scss);
+@import url(./scss-files/_main.scss);
+
+html {
+  scroll-behavior: smooth;
+}
+
+

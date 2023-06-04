@@ -1,0 +1,144 @@
+$navHeight: 80px;
+$containerMargin: $navHeight;
+$linkFontFamily: raleway,sans-serif;
+$linkFontColor: #333;
+$goldFontColor: #D1A33D;
+$linkFontSize: 0.9rem;
+$logoLinkSize: 16px;
+$linkTransitionDurationTime: 0.3s;
+
+*, :after, :before, :hover {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: ralewayFont;
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+  margin: {
+    left: $containerMargin;
+    right: $containerMargin;
+    bottom: $containerMargin;
+  }
+  
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  text-align: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logoLink {
+    font-family: $linkFontFamily;
+    display: flex;
+    align-items: center;
+    a {
+      font-size: $logoLinkSize;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 430px;
+  }
+
+  &__item_color_gold a{
+    color: $goldFontColor;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: $containerMargin;
+    right: $containerMargin;
+    width: calc(100% - 2*$containerMargin);
+    height: $navHeight;
+  }
+}
+
+.backgroundImage {
+  background: {
+    image: linear-gradient(rgb(54, 54, 54, 0.4), rgb(54, 54, 54, 0.4)), url(../img/background-img.jpg);
+    position: center;
+    attachment: fixed;
+    repeat: no-repeat;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 800px;
+  margin-top: $navHeight;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+a {
+  color: $linkFontColor;
+  text-decoration: none;
+
+  font: {
+    family: ralewayFont;
+    size: $linkFontSize;
+  }
+
+  transition: {
+    duration: $linkTransitionDurationTime;
+    property: color;
+  }
+
+  &:hover {
+    color: #D1A33D;
+    transition-property: color;
+    transition-duration: $linkTransitionDurationTime;
+  }
+}
+
+.siteHeader {
+  &__header, &__body {
+    color: white;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: ralewayFont;
+  }
+
+  &__header {
+    font-size: 50px;
+    letter-spacing: 0.57em;
+  }
+
+  &__body {
+    font-size: 20px;
+    letter-spacing: 0.7em;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+}
