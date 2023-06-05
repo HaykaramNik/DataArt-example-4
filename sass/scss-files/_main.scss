@@ -46,6 +46,60 @@ main {
     margin: auto;
     margin-bottom: 45px;
   }
+
+  &__end {
+    margin-bottom: 60px;
+  }
+
+  &__form {
+    margin-bottom: 80px;
+
+    form {
+      #email {
+        min-height: 40px;
+        min-width: 400px;
+        text-align: start;
+        padding-left: 14px;
+        transition-property: border;
+        transition-duration: 0.1s;
+
+        &:hover {
+          transition-property: border;
+          transition-duration: 0.1s;
+          border: 3px solid black;
+        }
+      }
+
+      #submit {
+        margin-left: 10px;
+        font-size: 14px;
+        font-family: ralewayFont;
+        background-color: white;
+        border: none;
+        transition-property: color;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: #D1A33D;
+          transition-property: color;
+          transition-duration: 0.2s;
+        }
+      }
+    }
+  }
+
+  &__endParag {
+    font-size: 18px;
+
+    a {
+      font-size: inherit;
+    }
+  }
+
+  &__header {
+    font-family: ralewayFont;
+    font-size: 20px;
+  }
 }
 
 main {

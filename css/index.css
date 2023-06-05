@@ -55,7 +55,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 80px;
@@ -85,8 +85,8 @@ a {
   text-decoration: none;
   font-family: ralewayFont;
   font-size: 0.9rem;
-  transition-property: color;
   transition-duration: 0.3s;
+  transition-property: color;
 }
 a:hover {
   color: #D1A33D;
@@ -95,11 +95,11 @@ a:hover {
 }
 
 .siteHeader__header, .siteHeader__body {
+  color: #fff;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   font-family: ralewayFont;
-  color: white;
 }
 .siteHeader__header {
   font-size: 50px;
@@ -107,9 +107,9 @@ a:hover {
 }
 .siteHeader__body {
   font-size: 20px;
+  letter-spacing: 0.7em;
   margin-top: 20px;
   margin-bottom: 70px;
-  letter-spacing: 0.7em;
 }
 
 @font-face {
@@ -152,6 +152,49 @@ main {
   margin: auto;
   margin-bottom: 45px;
 }
+.section__end {
+  margin-bottom: 60px;
+}
+.section__form {
+  margin-bottom: 80px;
+}
+.section__form form #email {
+  min-height: 40px;
+  min-width: 400px;
+  text-align: start;
+  padding-left: 14px;
+  transition-property: border;
+  transition-duration: 0.1s;
+}
+.section__form form #email:hover {
+  transition-property: border;
+  transition-duration: 0.1s;
+  border: 3px solid black;
+}
+.section__form form #submit {
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: ralewayFont;
+  background-color: white;
+  border: none;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+.section__form form #submit:hover {
+  color: #D1A33D;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+.section__endParag {
+  font-size: 18px;
+}
+.section__endParag a {
+  font-size: inherit;
+}
+.section__header {
+  font-family: ralewayFont;
+  font-size: 20px;
+}
 
 main {
   display: flex;
@@ -171,6 +214,10 @@ main {
   padding-bottom: 40px;
 }
 
+@font-face {
+  font-family: DidotW01Font;
+  src: url(../fonts/didot-italic.ttf);
+}
 .footer {
   background-color: white;
   position: fixed;
@@ -184,6 +231,12 @@ main {
   flex-direction: row;
   justify-content: center;
   padding-top: 20px;
+}
+.footer__prgf a {
+  font-family: DidotW01Font;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: #BABABA;
 }
 
 html {

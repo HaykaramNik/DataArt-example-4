@@ -1,3 +1,12 @@
+$navHeight: 80px;
+$containerMargin: $navHeight;
+$linkFontFamily: raleway,sans-serif;
+$linkFontColor: #333;
+$goldFontColor: #D1A33D;
+$linkFontSize: 0.9rem;
+$logoLinkSize: 16px;
+$linkTransitionDurationTime: 0.3s;
+
 @use "./scss-files/header";
 @use "./scss-files/main";
 @use "./scss-files/footer";

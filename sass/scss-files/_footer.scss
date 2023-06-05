@@ -1,4 +1,9 @@
+$colorGray: #BABABA;
 
+@font-face {
+  font-family: DidotW01Font;
+  src: url(../fonts/didot-italic.ttf);
+}
 
 .footer {
   background-color: white;
@@ -13,5 +18,14 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 20px;
+  }
+
+  &__prgf {
+    a {
+      font-family: DidotW01Font;
+      font-style: italic;
+      letter-spacing: 0.1em;
+      color: $colorGray;
+    }
   }
 }

@@ -1,6 +1,7 @@
 $navHeight: 80px;
 $containerMargin: $navHeight;
 $linkFontFamily: raleway,sans-serif;
+$colorWhite: #fff;
 $linkFontColor: #333;
 $goldFontColor: #D1A33D;
 $linkFontSize: 0.9rem;
@@ -71,7 +72,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: white;
+    background-color: $colorWhite;
     position: fixed;
     top: 0;
     left: $containerMargin;
@@ -115,7 +116,7 @@ a {
   }
 
   &:hover {
-    color: #D1A33D;
+    color: $goldFontColor;
     transition-property: color;
     transition-duration: $linkTransitionDurationTime;
   }
@@ -123,7 +124,7 @@ a {
 
 .siteHeader {
   &__header, &__body {
-    color: white;
+    color: $colorWhite;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
