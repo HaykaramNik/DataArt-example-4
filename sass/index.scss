@@ -1,18 +1,19 @@
-$navHeight: 80px;
-$containerMargin: $navHeight;
-$linkFontFamily: raleway,sans-serif;
-$linkFontColor: #333;
-$goldFontColor: #D1A33D;
-$linkFontSize: 0.9rem;
-$logoLinkSize: 16px;
-$linkTransitionDurationTime: 0.3s;
-
 @use "./scss-files/header";
 @use "./scss-files/main";
 @use "./scss-files/footer";
 
 @import url(./scss-files/_header.scss);
 @import url(./scss-files/_main.scss);
+
+@font-face {
+  font-family: DidotW01Font;
+  src: url(../fonts/didot-italic.ttf);
+}
+
+@font-face {
+  font-family: ralewayFont;
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
 
 html {
   scroll-behavior: smooth;
